@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: var(--Pale-blue);
+  padding: 6rem;
+}
+
+.product {
+  display: grid;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0rem 30rem 3rem 0;
+  border-radius: 15px;
+}
+.product-img img {
+  width: 480px;
+  border-radius: 15px 15px 0 0;
+}
+
+.product-name {
+  font-weight: 900;
+  text-align: center;
+  padding: 2rem;
+  color: var(--Dark-blue);
+}
+
+.product-description {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 4rem 0 4rem;
+  color: var(--Desaturated-blue);
+}
+
+.product-price {
+  background-color: var(--Very-pale-blue);
+  margin: 2rem 2rem 2rem 4rem;
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-box-img {
+  display: flex;
+  align-items: center;
+}
+
+.plan-box {
+  margin-left: 1.5rem;
+}
+
+.plan {
+  font-weight: 900;
+  padding-bottom: 5px;
+  color: var(--Dark-blue);
+}
+
+.price {
+  color: var(--Desaturated-blue);
+}
+
+.product-price a {
+  color: var(--Bright-blue);
+  font-size: 14px;
+  font-weight: 900;
+  padding-right: 1.9rem;
+}
+
+button {
+  display: grid;
+  color: white;
+  padding: 1rem 6rem 1rem 6rem;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0px 22px 11px 1px rgba(224, 232, 255, 1);
+  -webkit-box-shadow: 0px 22px 11px 1px rgba(224, 232, 255, 1);
+  -moz-box-shadow: 0px 22px 11px 1px rgba(224, 232, 255, 1);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--Bright-blue);
+}
+.cancel {
+  color: var(--Desaturated-blue);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 12rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(153, 57, 243);
+  color: white;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: var(--Dark-blue);
+}
+
+.product-price a:hover {
+  color: rgb(153, 57, 243);
+}
